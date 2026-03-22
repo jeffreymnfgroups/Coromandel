@@ -1,18 +1,8 @@
-# Lumèn Agency — Marketing & Growth Agency Website
+# Coromandel Branding Solutions
 
-A fully responsive, multi-page marketing agency website built for **Lumèn** — a Sydney-based growth agency. Designed with a minimal, luxury aesthetic and a smooth, polished user experience across all devices.
+A fully responsive, single-page marketing agency website for **Coromandel Branding Solutions** — based in Pondichery, Tamil Nadu. We specialize in building a Local Visibility System that helps local businesses get found, earn trust, and capture more enquiries every single day. 
 
----
-
-## 🌐 Live Demo
-
-**[View Live Site →](https://rasyidbejay.github.io/lumen-agency/)**
-
----
-
-## 📸 Screenshots
-
-![Lumèn Agency Screenshot](./screenshot.png)
+Designed with a clean, professional aesthetic and a smooth user experience across all devices.
 
 ---
 
@@ -22,54 +12,46 @@ A fully responsive, multi-page marketing agency website built for **Lumèn** —
 |---|---|
 | [Vue 3](https://vuejs.org/) (Composition API) | UI framework & component architecture |
 | [Vite](https://vitejs.dev/) | Build tool & dev server |
-| [Vue Router](https://router.vuejs.org/) | Client-side routing |
+| [Vue Router](https://router.vuejs.org/) | Single-page anchor link routing |
 | CSS3 with Custom Properties | Design system & theming |
 | Intersection Observer API | Scroll-triggered animations |
-| Google Fonts | Cormorant Garamond + Inter typography |
-| [gh-pages](https://github.com/tschaub/gh-pages) | GitHub Pages deployment |
 
 ---
 
 ## ✨ Features
 
-- **Multi-page routing** — Six distinct pages via Vue Router (Home, Services, About, Portfolio, Testimonials, Contact)
-- **Luxury dark theme** — Custom CSS property design system with gold accents (`#C9A96E`) and warm off-white typography
-- **Scroll animations** — Fade-in + slide-up transitions on every section using native Intersection Observer (no libraries)
-- **Fully responsive** — Mobile-first layout with breakpoints at 480px, 640px, 768px, 900px, and 1024px
-- **Filterable portfolio** — Category filter with Vue computed properties; instant reactive filtering, no page reload
-- **Contact form validation** — Reactive validation using `reactive()` with inline blur events and a success state
-- **Reusable component system** — `PageHero`, `CtaBanner`, and section components compose each page view
+- **Single-page application** — Seamless navigation across different sections using Vue Router with anchor links and smooth scrolling
+- **Professional aesthetic** — Custom CSS property design system tailored for branding services
+- **Scroll animations** — Fade-in and slide-up transitions on sections using the native Intersection Observer API
+- **Fully responsive** — Mobile-first layout optimized for all screen sizes and devices
+- **Service & Portfolio display** — Easily maintainable grid systems for showcasing services like Google Business Profile Optimization, Review Growth, and Local SEO
+- **Reusable component system** — Modular architecture using intuitive Vue components for easy scaling and updates
 - **Dynamic copyright year** — Computed property keeps the footer year always current
-- **CSS-only abstract visuals** — Hero orb built entirely from gradients, box-shadows, and CSS animations — no images
 
 ---
 
 ## 📁 Project Structure
 
-```
+```text
 src/
 ├── assets/
-│   └── main.css               # Global CSS variables, reset, utilities, animations
+│   ├── main.css               # Global CSS variables, reset, utilities, animations
+│   └── *.webp                 # Local optimized images
 ├── components/
-│   ├── NavBar.vue             # Sticky nav with hamburger menu & RouterLink
-│   ├── HeroSection.vue        # Full-viewport hero with CSS orb visual
-│   ├── ServicesSection.vue    # 6-card service grid (supports :limit prop for preview)
+│   ├── NavBar.vue             # Sticky nav with hamburger menu & anchor links
+│   ├── HeroSection.vue        # Full-viewport hero
+│   ├── ServicesSection.vue    # Service grid
 │   ├── AboutSection.vue       # Two-column layout with stats row & photo grid
 │   ├── PortfolioSection.vue   # Filterable 6-project grid
 │   ├── TestimonialsSection.vue # 3-card testimonial layout
 │   ├── ContactSection.vue     # Two-column contact form with validation
 │   ├── FooterSection.vue      # 4-column footer with dynamic year
-│   ├── PageHero.vue           # Reusable page banner (label + heading + subtext)
-│   └── CtaBanner.vue          # Reusable CTA box with RouterLink button
+│   ├── PageHero.vue           # Reusable page banner
+│   └── CtaBanner.vue          # Reusable CTA box
 ├── router/
-│   └── index.js               # Vue Router config with 6 named routes
+│   └── index.js               # Vue Router config with anchor hash navigation
 ├── views/
-│   ├── HomeView.vue           # Hero + 3 service preview + Testimonials + CTA
-│   ├── ServicesView.vue       # PageHero + full ServicesSection + CTA
-│   ├── AboutView.vue          # PageHero + About + Testimonials + CTA
-│   ├── PortfolioView.vue      # PageHero + PortfolioSection + CTA
-│   ├── TestimonialsView.vue   # PageHero + Testimonials + stats row + CTA
-│   └── ContactView.vue        # PageHero + ContactSection + reassurance row
+│   └── HomeView.vue           # Main view combining all sections
 ├── App.vue                    # Root: NavBar + RouterView + FooterSection
 └── main.js                    # App entry — mounts Vue with router + global CSS
 ```
@@ -87,8 +69,8 @@ src/
 
 ```bash
 # Clone the repository
-git clone https://github.com/rasyidbejay/lumen-agency.git
-cd lumen-agency
+git clone <repository-url>
+cd lumen-agency-main # or whatever your directory is named
 
 # Install dependencies
 npm install
@@ -112,29 +94,6 @@ Output is generated in the `dist/` folder.
 ```bash
 npm run preview
 ```
-
----
-
-## 📦 Deployment
-
-This project is deployed to **GitHub Pages** using the `gh-pages` package.
-
-```bash
-npm run deploy
-```
-
-This runs `npm run build` automatically (via the `predeploy` script), then pushes the `dist/` folder to the `gh-pages` branch of the repository.
-
-> The Vite config includes `base: '/lumen-agency/'` to ensure all assets resolve correctly under the GitHub Pages subdirectory.
-
----
-
-## 👨‍💻 Author
-
-**Built by MM** — web developer specialising in Vue, WordPress, and Shopify.
-
-- GitHub: [@rasyidbejay](https://github.com/rasyidbejay)
-- Live: [rasyidbejay.github.io/lumen-agency](https://rasyidbejay.github.io/lumen-agency/)
 
 ---
 
