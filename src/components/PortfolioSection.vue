@@ -21,7 +21,7 @@ onMounted(() => {
 const deepDives = [
   {
     title: 'Get Found Faster on Google and Maps',
-    body: `When someone nearby searches "salon near me" or "best clinic in Pondichery," your Google Business Profile is the first thing they see. If that profile looks incomplete, outdated, or thin, they scroll past. We optimize everything that matters — business category, keyword-rich descriptions, photo uploads with proper tagging, regular post strategy, Q&A optimization, and complete information that leaves no questions unanswered.`,
+    body: `When someone nearby searches "salon near me" or "best clinic in Auroville," your Google Business Profile is the first thing they see. If that profile looks incomplete, outdated, or thin, they scroll past. We optimize everything that matters — business category, keyword-rich descriptions, photo uploads with proper tagging, regular post strategy, Q&A optimization, and complete information that leaves no questions unanswered.`,
     result: 'Your business becomes easier to discover, easier to trust, and more likely to receive calls.',
     image: img4,
     tag: 'Google Business',
@@ -29,7 +29,7 @@ const deepDives = [
   },
   {
     title: 'We Find the Keywords Your Customers Already Use',
-    body: `Local customers don't just search "salon" or "doctor." They search "ladies salon in Marthandam," "best dental clinic near Pondichery bus stand," "cake shop open Sunday Thuckalay." We identify service + city combinations, high-intent buyer phrases, neighborhood-specific terms, gaps competitors haven't captured, and search volume opportunities for your category.`,
+    body: `Local customers don't just search "salon" or "doctor." They search "ladies salon in Marthandam," "best dental clinic near Auroville bus stand," "cake shop open Sunday Thuckalay." We identify service + city combinations, high-intent buyer phrases, neighborhood-specific terms, gaps competitors haven't captured, and search volume opportunities for your category.`,
     result: 'Your profile and website speak the exact language your customers use.',
     image: img5,
     tag: 'Keyword Strategy',
